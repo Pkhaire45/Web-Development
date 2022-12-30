@@ -1,0 +1,132 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.heading1 h1{
+  width: 100%;
+  margin-top: -220px;
+  display: flex;
+  background: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  font-size: 50px;
+}
+.main-page{
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  margin-left: -550px;
+  padding: 80px;
+  border: 30px black;
+  border-radius: 30px;
+  background: gold;
+}
+.main-page button{
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  margin: 0 40px;
+  color: #7D2Ae8;
+  background: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+}
+.main-page button:before,
+.main-page button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.main-page button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.main-page button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.main-page button:hover:before,
+.main-page button:hover:after {
+    transform: none;
+}
+
+.wrapper{
+  user-select: none;
+  padding: 80px;
+  border: 30px black;
+  border-radius: 30px;
+  background: gold;
+}
+.wrapper .time{
+  height: 100px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+  padding: 0 10px;
+}
+.wrapper .time span{
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #333;
+}
+.time span.colon{
+  width: 10px;
+}
+.time span.ms-colon,
+.time span.millisecond{
+  color: #7D2Ae8;
+}
+.wrapper .buttons{
+  text-align: center;
+  margin-top: 20px;
+}
+.buttons button{
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  color: #7D2Ae8;
+  background: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+}
+.buttons button.active,
+.buttons button.stopActive{
+  pointer-events: none;
+  opacity: 0.7;
+}
